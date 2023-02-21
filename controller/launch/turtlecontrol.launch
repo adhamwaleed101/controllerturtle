@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam command="load" file="$(find controller)/config/my_params.yaml" />
+
+<node name= "turtlesim" pkg ="turtlesim" type="turtlesim_node" />
+
+<node name="navigator" pkg="controller" type="navigator.py" />
+
+</launch>
